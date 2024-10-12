@@ -1,0 +1,67 @@
+[
+  {
+    "traits" : [
+      "EXTRA_ARMS",
+      "EXTRA_HEAD"
+    ],
+    "planet" : "Betelgeuse",
+    "age" : 59,
+    "id" : 1,
+    "isHumanoid" : true,
+    "type" : "Betelgeusian"
+  },
+  {
+    "isHumanoid" : false,
+    "traits" : [
+      "BULKY"
+    ],
+    "type" : "Vogons",
+    "id" : 2
+  },
+  {
+    "type" : "Betelgeusian",
+    "age" : 26,
+    "traits" : [
+      "EXTRA_ARMS"
+    ],
+    "id" : 6
+  },
+  {
+    "traits" : [
+      "EXTRA_HEAD"
+    ],
+    "type" : "Betelgeusian",
+    "id" : 8,
+    "age" : 82
+  },
+  {
+    "age" : 128,
+    "id" : 11,
+    "isHumanoid" : false,
+    "traits" : [
+      "GREEN"
+    ],
+    "type" : "Vogons"
+  },
+  {
+    "age" : 128,
+    "id" : 16,
+    "type" : "Vogons",
+    "planet" : "Vogsphere",
+    "isHumanoid" : false,
+    "traits" : [
+      "GREEN",
+      "BULKY"
+    ]
+  },
+  {
+    "id" : 21,
+    "type" : "Betelgeusian",
+    "age" : 45,
+    "planet" : "Betelgeuse",
+    "traits" : [
+      "EXTRA_ARMS",
+      "EXTRA_HEAD"
+    ]
+  }
+]
