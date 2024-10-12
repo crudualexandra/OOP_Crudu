@@ -13,12 +13,14 @@ class Individual: Codable {
     let planet: String?
     let age: Int?
     let traits: [String]?
-    
-    init(id: Int, isHumanoid: Bool?, planet: String?, age: Int?, traits: [String]?) {
+    var type: String?  
+
+    init(id: Int, isHumanoid: Bool?, planet: String?, age: Int?, traits: [String]?, type: String? = nil) {
         self.id = id
         self.isHumanoid = isHumanoid
         self.planet = planet
         self.age = age
         self.traits = traits
+        self.type = type
     }
 }

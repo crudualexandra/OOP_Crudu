@@ -16,11 +16,11 @@ class FileHandler {
             return nil
         }
     }
-
+    
     func writeOutput(universes: [Universe]) {
         let encoder = JSONEncoder()
         encoder.outputFormatting = .prettyPrinted
-
+        
         for universe in universes {
             let outputFilePath = FileManager.default.currentDirectoryPath + "/\(universe.name).json"
             do {

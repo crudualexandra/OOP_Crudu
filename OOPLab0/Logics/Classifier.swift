@@ -9,14 +9,29 @@ import Foundation
 
 class Classifier {
     var universes: [Universe] = [StarWars(), Marvel(), Hitchhiker(), LordOfTheRings()]
-
+    
     func classifyIndividuals(_ individuals: [Individual]) {
+        var unclassified = [Individual]()
+        
         for individual in individuals {
-            for i in 0..<universes.count {  // Loop with index to mutate array elements
+            var classified = false
+            for i in 0..<universes.count {
                 if universes[i].isEligible(individual: individual) {
                     universes[i].individuals.append(individual)
-                    break  // Stop after finding the first matching universe
+                    classified = true
+                    break
                 }
+            }
+            
+            if !classified {
+                unclassified.append(individual)
+            }
+        }
+        
+        if !unclassified.isEmpty {
+            print("Unclassified individuals: \(unclassified.count)")
+            for individual in unclassified {
+                print("Individual ID: \(individual.id) not classified. Fields: isHumanoid = \(String(describing: individual.isHumanoid)), planet = \(String(describing: individual.planet)), age = \(String(describing: individual.age)), traits = \(String(describing: individual.traits))")
             }
         }
     }

@@ -3,13 +3,17 @@ import Foundation
 class Marvel: Universe {
     let name = "Marvel"
     var individuals = [Individual]()
-
+    
     func isEligible(individual: Individual) -> Bool {
-        // Asgardian classification: Check for planet, age, traits
-        if let planet = individual.planet, planet == "Asgard", let traits = individual.traits {
-            return individual.isHumanoid == true && (individual.age == nil || individual.age! <= 5000) && traits.contains("BLONDE") && traits.contains("TALL")
-        }
         
+        if (individual.isHumanoid == nil || individual.isHumanoid!) &&
+            (individual.planet == nil || individual.planet!.caseInsensitiveCompare("Asgard") == .orderedSame) &&
+            (individual.age == nil || (individual.age! >= 0 && individual.age! <= 5000)) &&
+            (individual.traits == nil || individual.traits!.contains("BLONDE") || individual.traits!.contains("TALL")) {
+            
+            individual.type = "Asgardian"
+            return true
+        }
         return false
     }
 }
