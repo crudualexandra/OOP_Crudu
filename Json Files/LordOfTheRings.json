@@ -1,0 +1,58 @@
+[
+  {
+    "traits" : [
+      "SHORT",
+      "BULKY"
+    ],
+    "planet" : "Earth",
+    "id" : 4,
+    "type" : "Dwarf"
+  },
+  {
+    "isHumanoid" : true,
+    "traits" : [
+      "BULKY"
+    ],
+    "type" : "Dwarf",
+    "id" : 5
+  },
+  {
+    "type" : "Dwarf",
+    "planet" : "Earth",
+    "isHumanoid" : true,
+    "age" : 124,
+    "traits" : [
+      "SHORT",
+      "BULKY"
+    ],
+    "id" : 9
+  },
+  {
+    "isHumanoid" : true,
+    "type" : "Elf",
+    "id" : 14,
+    "age" : 7523
+  },
+  {
+    "age" : 451,
+    "id" : 15,
+    "planet" : "Earth",
+    "isHumanoid" : true,
+    "traits" : [
+      "BLONDE",
+      "TALL"
+    ],
+    "type" : "Elf"
+  },
+  {
+    "age" : 451,
+    "id" : 19,
+    "type" : "Elf",
+    "planet" : "Earth",
+    "isHumanoid" : true,
+    "traits" : [
+      "BLONDE",
+      "POINTY_EARS"
+    ]
+  }
+]
