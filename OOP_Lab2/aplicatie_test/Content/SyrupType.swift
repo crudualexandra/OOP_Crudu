@@ -1,3 +1,5 @@
+import Foundation
+
 enum SyrupType: String, CustomStringConvertible {
     case macadamia = "Macadamia"
     case vanilla = "Vanilla"

@@ -19,6 +19,10 @@
 		E170F3DD2CD8E76A0001DB0A /* PumpkinSpiceLatte.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170F3DC2CD8E76A0001DB0A /* PumpkinSpiceLatte.swift */; };
 		E170F3DF2CD8E7960001DB0A /* Intensity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170F3DE2CD8E7960001DB0A /* Intensity.swift */; };
 		E170F3E12CD8E7A40001DB0A /* SyrupType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170F3E02CD8E7A40001DB0A /* SyrupType.swift */; };
+		E170F3E32CD8EE230001DB0A /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170F3E22CD8EE230001DB0A /* ColorExtensions.swift */; };
+		E170F3E52CD8EE700001DB0A /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170F3E42CD8EE700001DB0A /* MenuView.swift */; };
+		E170F3E72CD8EE8E0001DB0A /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170F3E62CD8EE8E0001DB0A /* OrderView.swift */; };
+		E170F3E92CD8EEB60001DB0A /* Barista.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170F3E82CD8EEB60001DB0A /* Barista.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		E170F3DC2CD8E76A0001DB0A /* PumpkinSpiceLatte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumpkinSpiceLatte.swift; sourceTree = "<group>"; };
 		E170F3DE2CD8E7960001DB0A /* Intensity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intensity.swift; sourceTree = "<group>"; };
 		E170F3E02CD8E7A40001DB0A /* SyrupType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyrupType.swift; sourceTree = "<group>"; };
+		E170F3E22CD8EE230001DB0A /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		E170F3E42CD8EE700001DB0A /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		E170F3E62CD8EE8E0001DB0A /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		E170F3E82CD8EEB60001DB0A /* Barista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barista.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +75,11 @@
 		E170F3C22CD8E67C0001DB0A /* aplicatie_test */ = {
 			isa = PBXGroup;
 			children = (
+				E170F3E22CD8EE230001DB0A /* ColorExtensions.swift */,
 				E170F3D32CD8E6E40001DB0A /* Content */,
 				E170F3C52CD8E67C0001DB0A /* ContentView.swift */,
+				E170F3E42CD8EE700001DB0A /* MenuView.swift */,
+				E170F3E62CD8EE8E0001DB0A /* OrderView.swift */,
 				E170F3C32CD8E67C0001DB0A /* aplicatie_testApp.swift */,
 				E170F3C72CD8E67E0001DB0A /* Assets.xcassets */,
 				E170F3C92CD8E67E0001DB0A /* Preview Content */,
@@ -95,6 +106,7 @@
 				E170F3DC2CD8E76A0001DB0A /* PumpkinSpiceLatte.swift */,
 				E170F3DE2CD8E7960001DB0A /* Intensity.swift */,
 				E170F3E02CD8E7A40001DB0A /* SyrupType.swift */,
+				E170F3E82CD8EEB60001DB0A /* Barista.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -169,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E170F3E32CD8EE230001DB0A /* ColorExtensions.swift in Sources */,
+				E170F3E72CD8EE8E0001DB0A /* OrderView.swift in Sources */,
+				E170F3E52CD8EE700001DB0A /* MenuView.swift in Sources */,
 				E170F3D22CD8E6D00001DB0A /* CoffeeProtocol.swift in Sources */,
+				E170F3E92CD8EEB60001DB0A /* Barista.swift in Sources */,
 				E170F3E12CD8E7A40001DB0A /* SyrupType.swift in Sources */,
 				E170F3C62CD8E67C0001DB0A /* ContentView.swift in Sources */,
 				E170F3D92CD8E73D0001DB0A /* Cappuccino.swift in Sources */,

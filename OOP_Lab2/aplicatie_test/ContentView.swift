@@ -1,63 +1,59 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var messages: [String] = []
-
     var body: some View {
-        VStack {
-            Text("Coffee Shop")
-                .font(.largeTitle)
-                .padding()
-
-            Button(action: makeCoffees) {
-                Text("Make Coffees")
-                    .font(.headline)
-                    .padding()
-                    .background(Color.brown)
-                    .foregroundColor(.white)
-                    .cornerRadius(8)
+        NavigationView {
+            
+            VStack {
+                Spacer()
+                
+                
+                
+                Spacer()
+                
+                VStack(spacing: 10) {
+                    // Button Style
+                    let buttonWidth: CGFloat = 300
+                    let buttonHeight: CGFloat = 50
+                    let buttonColor = Color(hex: "#FFEDEB")
+                    let textColor = Color(hex:  "#9D8579")
+                    
+                    NavigationLink(destination: OrderView()) {
+                        Text("Order Coffee")
+                            .font(.custom("CustomFont", size: 20))
+                            .frame(width: buttonWidth, height: buttonHeight)
+                            .background(buttonColor)
+                            .foregroundColor(textColor)
+                            .cornerRadius(10)
+                            .shadow(radius: 5)
+                    }
+                    
+                    NavigationLink(destination: MenuView()) {
+                        Text("View Menu")
+                            .font(.custom("", size: 20))
+                            .frame(width: buttonWidth, height: buttonHeight)
+                            .background(buttonColor)
+                            .foregroundColor(textColor)
+                            .cornerRadius(10)
+                            .shadow(radius: 5)
+                    }
+                }
+                .padding(.bottom, 300)
             }
-            .padding()
-
-            List(messages, id: \.self) { message in
-                Text(message)
-                    .padding()
-            }
-            .padding()
-        }
-    }
-
-    func makeCoffees() {
-        messages.removeAll()
-
-        let coffees: [Coffee] = [
-            Coffee(coffeeIntensity: .normal),
-            Americano(coffeeIntensity: .strong, mlOfWater: 150),
-            Cappuccino(coffeeIntensity: .light, mlOfMilk: 50),
-            SyrupCappuccino(coffeeIntensity: .normal, mlOfMilk: 120, syrup: .vanilla),
-            PumpkinSpiceLatte(coffeeIntensity: .strong, mlOfMilk: 150, mgOfPumpkinSpice: 50)
-        ]
-
-        for coffee in coffees {
-            let steps = prepareCoffee(coffee: coffee)
-            messages.append(steps)
-        }
-    }
-
-    func prepareCoffee(coffee: Coffee) -> String {
-        if let pumpkinSpiceLatte = coffee as? PumpkinSpiceLatte {
-            return pumpkinSpiceLatte.makePumpkinSpiceLatte()
-        } else if let syrupCappuccino = coffee as? SyrupCappuccino {
-            return syrupCappuccino.makeSyrupCappuccino()
-        } else if let cappuccino = coffee as? Cappuccino {
-            return cappuccino.makeCappuccino()
-        } else if let americano = coffee as? Americano {
-            return americano.makeAmericano()
-        } else {
-            return coffee.make()
+            .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: UIScreen.main.bounds.height)
+            .background(
+                Image("Coffee Shop")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.bottom)
+                    .edgesIgnoringSafeArea(.top)
+                
+            )
         }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

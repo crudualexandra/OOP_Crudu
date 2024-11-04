@@ -1,3 +1,5 @@
+import Foundation
+
 enum Intensity: String, CustomStringConvertible {
     case light = "Light"
     case normal = "Medium"

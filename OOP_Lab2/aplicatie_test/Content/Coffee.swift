@@ -1,3 +1,7 @@
+// Coffee.swift
+
+import Foundation
+
 class Coffee: CoffeeProtocol {
     var name: String {
         return "Coffee"
@@ -22,5 +26,9 @@ class Coffee: CoffeeProtocol {
         steps += "1. Grind coffee beans.\n"
         steps += "2. Brew coffee."
         return steps
+    }
+
+    func description() -> String {
+        return "A classic \(name) made by brewing ground coffee beans with water."
     }
 }
