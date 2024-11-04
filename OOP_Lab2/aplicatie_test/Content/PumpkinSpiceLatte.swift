@@ -1,19 +1,17 @@
-class PumpkinSpiceLatte: SyrupCappuccino {
+class PumpkinSpiceLatte: Cappuccino {
     override var name: String {
         return "PumpkinSpiceLatte"
     }
     var mgOfPumpkinSpice: Int
 
-    init(coffeeIntensity: Intensity, mlOfMilk: Int, syrup: SyrupType, mgOfPumpkinSpice: Int) {
+    init(coffeeIntensity: Intensity, mlOfMilk: Int, mgOfPumpkinSpice: Int) {
         self.mgOfPumpkinSpice = mgOfPumpkinSpice
-        super.init(coffeeIntensity: coffeeIntensity, mlOfMilk: mlOfMilk, syrup: syrup)
+        super.init(coffeeIntensity: coffeeIntensity, mlOfMilk: mlOfMilk)
     }
 
-    override func brew() -> String {
-        return super.brew() + " Pumpkin Spice: \(mgOfPumpkinSpice)mg."
-    }
-
-    override func printDetails() -> String {
-        return "\(super.printDetails())\n\(name) pumpkin spice: \(mgOfPumpkinSpice)mg"
+    func makePumpkinSpiceLatte() -> String {
+        var steps = super.makeCappuccino()
+        steps += "\n4. Add pumpkin spice (\(mgOfPumpkinSpice)mg)."
+        return steps
     }
 }

@@ -15,4 +15,12 @@ class Coffee: CoffeeProtocol {
     func printDetails() -> String {
         return "Coffee intensity: \(coffeeIntensity.rawValue)"
     }
+
+    final func make() -> String {
+        var steps = ""
+        steps += "Making a basic \(name):\n"
+        steps += "1. Grind coffee beans.\n"
+        steps += "2. Brew coffee."
+        return steps
+    }
 }

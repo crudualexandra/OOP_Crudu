@@ -9,11 +9,9 @@ class SyrupCappuccino: Cappuccino {
         super.init(coffeeIntensity: coffeeIntensity, mlOfMilk: mlOfMilk)
     }
 
-    override func brew() -> String {
-        return super.brew() + " Syrup: \(syrup.rawValue)."
-    }
-
-    override func printDetails() -> String {
-        return "\(super.printDetails())\n\(name) syrup: \(syrup.rawValue)"
+    func makeSyrupCappuccino() -> String {
+        var steps = super.makeCappuccino()
+        steps += "\n4. Add syrup (\(syrup.rawValue))."
+        return steps
     }
 }

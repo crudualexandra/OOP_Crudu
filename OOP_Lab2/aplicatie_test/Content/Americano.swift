@@ -9,11 +9,9 @@ class Americano: Coffee {
         super.init(coffeeIntensity: coffeeIntensity)
     }
 
-    override func brew() -> String {
-        return super.brew() + " Water: \(mlOfWater)ml."
-    }
-
-    override func printDetails() -> String {
-        return "\(super.printDetails())\n\(name) water: \(mlOfWater)ml"
+    func makeAmericano() -> String {
+        var steps = super.make()
+        steps += "\n3. Add hot water (\(mlOfWater)ml)."
+        return steps
     }
 }

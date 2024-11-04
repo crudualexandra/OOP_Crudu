@@ -9,8 +9,8 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .padding()
 
-            Button(action: brewCoffees) {
-                Text("Brew Coffees")
+            Button(action: makeCoffees) {
+                Text("Make Coffees")
                     .font(.headline)
                     .padding()
                     .background(Color.brown)
@@ -21,25 +21,40 @@ struct ContentView: View {
 
             List(messages, id: \.self) { message in
                 Text(message)
+                    .padding()
             }
             .padding()
         }
     }
 
-    func brewCoffees() {
+    func makeCoffees() {
         messages.removeAll()
 
-        let coffees: [CoffeeProtocol] = [
+        let coffees: [Coffee] = [
             Coffee(coffeeIntensity: .normal),
             Americano(coffeeIntensity: .strong, mlOfWater: 150),
             Cappuccino(coffeeIntensity: .light, mlOfMilk: 50),
             SyrupCappuccino(coffeeIntensity: .normal, mlOfMilk: 120, syrup: .vanilla),
-            PumpkinSpiceLatte(coffeeIntensity: .strong, mlOfMilk: 150, syrup: .caramel, mgOfPumpkinSpice: 50)
+            PumpkinSpiceLatte(coffeeIntensity: .strong, mlOfMilk: 150, mgOfPumpkinSpice: 50)
         ]
 
         for coffee in coffees {
-            let details = coffee.printDetails()
-            messages.append(details)
+            let steps = prepareCoffee(coffee: coffee)
+            messages.append(steps)
+        }
+    }
+
+    func prepareCoffee(coffee: Coffee) -> String {
+        if let pumpkinSpiceLatte = coffee as? PumpkinSpiceLatte {
+            return pumpkinSpiceLatte.makePumpkinSpiceLatte()
+        } else if let syrupCappuccino = coffee as? SyrupCappuccino {
+            return syrupCappuccino.makeSyrupCappuccino()
+        } else if let cappuccino = coffee as? Cappuccino {
+            return cappuccino.makeCappuccino()
+        } else if let americano = coffee as? Americano {
+            return americano.makeAmericano()
+        } else {
+            return coffee.make()
         }
     }
 }
