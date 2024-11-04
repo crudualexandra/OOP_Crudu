@@ -12,4 +12,8 @@ class Americano: Coffee {
     override func brew() -> String {
         return super.brew() + " Water: \(mlOfWater)ml."
     }
+
+    override func printDetails() -> String {
+        return "\(super.printDetails())\n\(name) water: \(mlOfWater)ml"
+    }
 }

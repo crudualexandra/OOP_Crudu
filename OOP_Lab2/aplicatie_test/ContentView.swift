@@ -32,13 +32,14 @@ struct ContentView: View {
         let coffees: [CoffeeProtocol] = [
             Coffee(coffeeIntensity: .normal),
             Americano(coffeeIntensity: .strong, mlOfWater: 150),
-            Cappuccino(coffeeIntensity: .light, mlOfMilk: 100),
+            Cappuccino(coffeeIntensity: .light, mlOfMilk: 50),
             SyrupCappuccino(coffeeIntensity: .normal, mlOfMilk: 120, syrup: .vanilla),
             PumpkinSpiceLatte(coffeeIntensity: .strong, mlOfMilk: 150, syrup: .caramel, mgOfPumpkinSpice: 50)
         ]
 
         for coffee in coffees {
-            messages.append(coffee.brew())
+            let details = coffee.printDetails()
+            messages.append(details)
         }
     }
 }

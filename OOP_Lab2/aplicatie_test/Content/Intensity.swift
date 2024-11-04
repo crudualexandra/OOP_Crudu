@@ -1,6 +1,6 @@
 enum Intensity: String, CustomStringConvertible {
     case light = "Light"
-    case normal = "Normal"
+    case normal = "Medium"
     case strong = "Strong"
 
     var description: String {

@@ -12,4 +12,8 @@ class PumpkinSpiceLatte: SyrupCappuccino {
     override func brew() -> String {
         return super.brew() + " Pumpkin Spice: \(mgOfPumpkinSpice)mg."
     }
+
+    override func printDetails() -> String {
+        return "\(super.printDetails())\n\(name) pumpkin spice: \(mgOfPumpkinSpice)mg"
+    }
 }

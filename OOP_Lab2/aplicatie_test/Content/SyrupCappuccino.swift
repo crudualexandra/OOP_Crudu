@@ -10,6 +10,10 @@ class SyrupCappuccino: Cappuccino {
     }
 
     override func brew() -> String {
-        return super.brew() + " Syrup: \(syrup)."
+        return super.brew() + " Syrup: \(syrup.rawValue)."
+    }
+
+    override func printDetails() -> String {
+        return "\(super.printDetails())\n\(name) syrup: \(syrup.rawValue)"
     }
 }

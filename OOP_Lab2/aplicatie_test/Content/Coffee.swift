@@ -11,4 +11,8 @@ class Coffee: CoffeeProtocol {
     func brew() -> String {
         return "Brewing a \(name) with intensity \(coffeeIntensity)."
     }
+
+    func printDetails() -> String {
+        return "Coffee intensity: \(coffeeIntensity.rawValue)"
+    }
 }

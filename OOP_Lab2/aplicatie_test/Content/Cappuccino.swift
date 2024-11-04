@@ -12,4 +12,8 @@ class Cappuccino: Coffee {
     override func brew() -> String {
         return super.brew() + " Milk: \(mlOfMilk)ml."
     }
+
+    override func printDetails() -> String {
+        return "\(super.printDetails())\n\(name) milk: \(mlOfMilk)mg"
+    }
 }
