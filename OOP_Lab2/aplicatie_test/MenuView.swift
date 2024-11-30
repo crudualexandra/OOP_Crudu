@@ -17,13 +17,13 @@ struct MenuView: View {
     
     var body: some View {
         ZStack {
-            // Background Image
+          
             Image("background")
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
             
-            // Overlay for readability
+          
             Color.black.opacity(0.5)
                 .edgesIgnoringSafeArea(.all)
             
@@ -40,9 +40,9 @@ struct MenuView: View {
                 .background(Color.black.opacity(0.3))
                 .cornerRadius(10)
             }
-            .listStyle(PlainListStyle())
+            .padding(.top, 50)
+//            .listStyle(PlainListStyle())
             .navigationBarTitle("Menu", displayMode: .inline)
-            .background(Color.clear)
         }
     }
 }

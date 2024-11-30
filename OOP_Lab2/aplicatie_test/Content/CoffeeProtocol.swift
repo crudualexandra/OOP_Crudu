@@ -8,5 +8,5 @@ protocol CoffeeProtocol {
     func brew() -> String
     func printDetails() -> String
     func make() -> String
-    func description() -> String // Added method
+    func description() -> String 
 }

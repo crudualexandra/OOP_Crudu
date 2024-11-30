@@ -3,7 +3,7 @@ import Foundation
 public class Barista {
     public init() {}
 
-    // Method to handle orders with quantities
+    // handling orders
     public func takeOrder(coffeeOrders: [String: Int]) -> [String] {
         var outputMessages: [String] = []
         for (orderName, quantity) in coffeeOrders {
@@ -15,7 +15,7 @@ public class Barista {
         return outputMessages
     }
 
-    // Method to make a single beverage
+    // managing a single beverage
     public func makeBeverage(orderName: String) -> String {
         if let coffee = prepareCoffee(orderName: orderName) {
             let details = coffee.printDetails()
@@ -27,7 +27,7 @@ public class Barista {
         }
     }
 
-    // Private methods
+    // object creation
     private func prepareCoffee(orderName: String) -> CoffeeProtocol? {
         switch orderName.lowercased() {
         case "coffee":
@@ -44,7 +44,7 @@ public class Barista {
             return nil
         }
     }
-
+    //detailed preparation
     private func makeCoffee(coffee: CoffeeProtocol) -> String {
         if let pumpkinSpiceLatte = coffee as? PumpkinSpiceLatte {
             return pumpkinSpiceLatte.makePumpkinSpiceLatte()

@@ -12,7 +12,7 @@ struct ContentView: View {
                 Spacer()
                 
                 VStack(spacing: 10) {
-                    // Button Style
+                    // Button 
                     let buttonWidth: CGFloat = 300
                     let buttonHeight: CGFloat = 50
                     let buttonColor = Color(hex: "#FFEDEB")

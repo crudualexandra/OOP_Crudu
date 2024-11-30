@@ -9,20 +9,20 @@ struct OrderView: View {
     @State private var messages: [RecipeMessage] = []
     private let barista = Barista()
 
-    // State variables for multiple orders
+
     @State private var coffeeOrders: [String: Int] = [:]
     let beverageOptions = ["Coffee", "Americano", "Cappuccino", "Syrup Cappuccino", "Pumpkin Spice Latte"]
 
     var body: some View {
         ZStack {
-            // Background Image
+            
             Image("background")
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
             
-            // Overlay for readability
-            Color.black.opacity(0.5)
+       
+            Color.black.opacity(0.2)
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
@@ -31,7 +31,7 @@ struct OrderView: View {
                     .foregroundColor(Color(hex: "#FFEDEB"))
                     .padding()
 
-                // List of beverage options with quantity selectors
+               
                 ForEach(beverageOptions, id: \.self) { beverage in
                     HStack {
                         Text(beverage)
