@@ -18,6 +18,14 @@
 		E19DA6F82CFB73BB00DF3EFC /* CircularBufferQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA6F72CFB73BB00DF3EFC /* CircularBufferQueue.swift */; };
 		E19DA7002CFB744900DF3EFC /* CarServiceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA6FF2CFB744900DF3EFC /* CarServiceAppTests.swift */; };
 		E19DA7072CFB74AE00DF3EFC /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7062CFB74AE00DF3EFC /* QueueTests.swift */; };
+		E19DA7092CFB786000DF3EFC /* Dineable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7082CFB786000DF3EFC /* Dineable.swift */; };
+		E19DA70B2CFB787C00DF3EFC /* Refuelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA70A2CFB787C00DF3EFC /* Refuelable.swift */; };
+		E19DA70D2CFB789600DF3EFC /* PeopleDinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA70C2CFB789600DF3EFC /* PeopleDinner.swift */; };
+		E19DA70F2CFB78B400DF3EFC /* RobotDinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA70E2CFB78B400DF3EFC /* RobotDinner.swift */; };
+		E19DA7112CFB78D200DF3EFC /* ElectricStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7102CFB78D200DF3EFC /* ElectricStation.swift */; };
+		E19DA7132CFB78E800DF3EFC /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7122CFB78E800DF3EFC /* GasStation.swift */; };
+		E19DA7152CFB790900DF3EFC /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7142CFB790900DF3EFC /* Stats.swift */; };
+		E19DA7172CFB795D00DF3EFC /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7162CFB795D00DF3EFC /* ServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		E19DA6FD2CFB744900DF3EFC /* CarServiceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarServiceAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19DA6FF2CFB744900DF3EFC /* CarServiceAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarServiceAppTests.swift; sourceTree = "<group>"; };
 		E19DA7062CFB74AE00DF3EFC /* QueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
+		E19DA7082CFB786000DF3EFC /* Dineable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dineable.swift; sourceTree = "<group>"; };
+		E19DA70A2CFB787C00DF3EFC /* Refuelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refuelable.swift; sourceTree = "<group>"; };
+		E19DA70C2CFB789600DF3EFC /* PeopleDinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleDinner.swift; sourceTree = "<group>"; };
+		E19DA70E2CFB78B400DF3EFC /* RobotDinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotDinner.swift; sourceTree = "<group>"; };
+		E19DA7102CFB78D200DF3EFC /* ElectricStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricStation.swift; sourceTree = "<group>"; };
+		E19DA7122CFB78E800DF3EFC /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
+		E19DA7142CFB790900DF3EFC /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		E19DA7162CFB795D00DF3EFC /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +136,8 @@
 			isa = PBXGroup;
 			children = (
 				E19DA6EE2CFB731800DF3EFC /* Queue.swift */,
+				E19DA7082CFB786000DF3EFC /* Dineable.swift */,
+				E19DA70A2CFB787C00DF3EFC /* Refuelable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -137,6 +155,10 @@
 		E19DA6E92CFB71ED00DF3EFC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E19DA70C2CFB789600DF3EFC /* PeopleDinner.swift */,
+				E19DA70E2CFB78B400DF3EFC /* RobotDinner.swift */,
+				E19DA7102CFB78D200DF3EFC /* ElectricStation.swift */,
+				E19DA7122CFB78E800DF3EFC /* GasStation.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -152,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				E19DA6F22CFB737100DF3EFC /* LinkedListNode.swift */,
+				E19DA7142CFB790900DF3EFC /* Stats.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -175,6 +198,7 @@
 			children = (
 				E19DA6FF2CFB744900DF3EFC /* CarServiceAppTests.swift */,
 				E19DA7062CFB74AE00DF3EFC /* QueueTests.swift */,
+				E19DA7162CFB795D00DF3EFC /* ServiceTests.swift */,
 			);
 			path = CarServiceAppTests;
 			sourceTree = "<group>";
@@ -280,12 +304,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19DA6DB2CFB709F00DF3EFC /* ContentView.swift in Sources */,
+				E19DA70B2CFB787C00DF3EFC /* Refuelable.swift in Sources */,
+				E19DA7132CFB78E800DF3EFC /* GasStation.swift in Sources */,
+				E19DA7152CFB790900DF3EFC /* Stats.swift in Sources */,
+				E19DA70D2CFB789600DF3EFC /* PeopleDinner.swift in Sources */,
 				E19DA6EF2CFB731800DF3EFC /* Queue.swift in Sources */,
 				E19DA6F52CFB739200DF3EFC /* LinkedListQueue.swift in Sources */,
 				E19DA6D92CFB709F00DF3EFC /* Lab3App.swift in Sources */,
 				E19DA6F12CFB734800DF3EFC /* ArrayQueue.swift in Sources */,
+				E19DA7092CFB786000DF3EFC /* Dineable.swift in Sources */,
 				E19DA6F32CFB737100DF3EFC /* LinkedListNode.swift in Sources */,
+				E19DA7112CFB78D200DF3EFC /* ElectricStation.swift in Sources */,
 				E19DA6F82CFB73BB00DF3EFC /* CircularBufferQueue.swift in Sources */,
+				E19DA70F2CFB78B400DF3EFC /* RobotDinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19DA7002CFB744900DF3EFC /* CarServiceAppTests.swift in Sources */,
+				E19DA7172CFB795D00DF3EFC /* ServiceTests.swift in Sources */,
 				E19DA7072CFB74AE00DF3EFC /* QueueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
