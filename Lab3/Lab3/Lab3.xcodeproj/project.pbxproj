@@ -29,6 +29,8 @@
 		E19DA7192CFB7AB100DF3EFC /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7182CFB7AB100DF3EFC /* Car.swift */; };
 		E19DA71B2CFB7ACD00DF3EFC /* CarStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA71A2CFB7ACD00DF3EFC /* CarStation.swift */; };
 		E19DA71D2CFB7B0100DF3EFC /* CarStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA71C2CFB7B0100DF3EFC /* CarStationTests.swift */; };
+		E19DA71F2CFB848300DF3EFC /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA71E2CFB848300DF3EFC /* Semaphore.swift */; };
+		E19DA7212CFB84B800DF3EFC /* SemaphoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7202CFB84B800DF3EFC /* SemaphoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		E19DA7182CFB7AB100DF3EFC /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		E19DA71A2CFB7ACD00DF3EFC /* CarStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStation.swift; sourceTree = "<group>"; };
 		E19DA71C2CFB7B0100DF3EFC /* CarStationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStationTests.swift; sourceTree = "<group>"; };
+		E19DA71E2CFB848300DF3EFC /* Semaphore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semaphore.swift; sourceTree = "<group>"; };
+		E19DA7202CFB84B800DF3EFC /* SemaphoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemaphoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 			children = (
 				E19DA6F22CFB737100DF3EFC /* LinkedListNode.swift */,
 				E19DA7142CFB790900DF3EFC /* Stats.swift */,
+				E19DA71E2CFB848300DF3EFC /* Semaphore.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				E19DA7062CFB74AE00DF3EFC /* QueueTests.swift */,
 				E19DA7162CFB795D00DF3EFC /* ServiceTests.swift */,
 				E19DA71C2CFB7B0100DF3EFC /* CarStationTests.swift */,
+				E19DA7202CFB84B800DF3EFC /* SemaphoreTests.swift */,
 			);
 			path = CarServiceAppTests;
 			sourceTree = "<group>";
@@ -323,6 +329,7 @@
 				E19DA6F52CFB739200DF3EFC /* LinkedListQueue.swift in Sources */,
 				E19DA6D92CFB709F00DF3EFC /* Lab3App.swift in Sources */,
 				E19DA6F12CFB734800DF3EFC /* ArrayQueue.swift in Sources */,
+				E19DA71F2CFB848300DF3EFC /* Semaphore.swift in Sources */,
 				E19DA7092CFB786000DF3EFC /* Dineable.swift in Sources */,
 				E19DA6F32CFB737100DF3EFC /* LinkedListNode.swift in Sources */,
 				E19DA7112CFB78D200DF3EFC /* ElectricStation.swift in Sources */,
@@ -336,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19DA7002CFB744900DF3EFC /* CarServiceAppTests.swift in Sources */,
+				E19DA7212CFB84B800DF3EFC /* SemaphoreTests.swift in Sources */,
 				E19DA7172CFB795D00DF3EFC /* ServiceTests.swift in Sources */,
 				E19DA7072CFB74AE00DF3EFC /* QueueTests.swift in Sources */,
 				E19DA71D2CFB7B0100DF3EFC /* CarStationTests.swift in Sources */,
