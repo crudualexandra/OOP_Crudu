@@ -26,6 +26,9 @@
 		E19DA7132CFB78E800DF3EFC /* GasStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7122CFB78E800DF3EFC /* GasStation.swift */; };
 		E19DA7152CFB790900DF3EFC /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7142CFB790900DF3EFC /* Stats.swift */; };
 		E19DA7172CFB795D00DF3EFC /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7162CFB795D00DF3EFC /* ServiceTests.swift */; };
+		E19DA7192CFB7AB100DF3EFC /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7182CFB7AB100DF3EFC /* Car.swift */; };
+		E19DA71B2CFB7ACD00DF3EFC /* CarStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA71A2CFB7ACD00DF3EFC /* CarStation.swift */; };
+		E19DA71D2CFB7B0100DF3EFC /* CarStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA71C2CFB7B0100DF3EFC /* CarStationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		E19DA7122CFB78E800DF3EFC /* GasStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasStation.swift; sourceTree = "<group>"; };
 		E19DA7142CFB790900DF3EFC /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		E19DA7162CFB795D00DF3EFC /* ServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		E19DA7182CFB7AB100DF3EFC /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		E19DA71A2CFB7ACD00DF3EFC /* CarStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStation.swift; sourceTree = "<group>"; };
+		E19DA71C2CFB7B0100DF3EFC /* CarStationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 		E19DA6E62CFB71D100DF3EFC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E19DA7182CFB7AB100DF3EFC /* Car.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,6 +173,7 @@
 		E19DA6EA2CFB71FD00DF3EFC /* Stations */ = {
 			isa = PBXGroup;
 			children = (
+				E19DA71A2CFB7ACD00DF3EFC /* CarStation.swift */,
 			);
 			path = Stations;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 				E19DA6FF2CFB744900DF3EFC /* CarServiceAppTests.swift */,
 				E19DA7062CFB74AE00DF3EFC /* QueueTests.swift */,
 				E19DA7162CFB795D00DF3EFC /* ServiceTests.swift */,
+				E19DA71C2CFB7B0100DF3EFC /* CarStationTests.swift */,
 			);
 			path = CarServiceAppTests;
 			sourceTree = "<group>";
@@ -305,6 +314,8 @@
 			files = (
 				E19DA6DB2CFB709F00DF3EFC /* ContentView.swift in Sources */,
 				E19DA70B2CFB787C00DF3EFC /* Refuelable.swift in Sources */,
+				E19DA7192CFB7AB100DF3EFC /* Car.swift in Sources */,
+				E19DA71B2CFB7ACD00DF3EFC /* CarStation.swift in Sources */,
 				E19DA7132CFB78E800DF3EFC /* GasStation.swift in Sources */,
 				E19DA7152CFB790900DF3EFC /* Stats.swift in Sources */,
 				E19DA70D2CFB789600DF3EFC /* PeopleDinner.swift in Sources */,
@@ -327,6 +338,7 @@
 				E19DA7002CFB744900DF3EFC /* CarServiceAppTests.swift in Sources */,
 				E19DA7172CFB795D00DF3EFC /* ServiceTests.swift in Sources */,
 				E19DA7072CFB74AE00DF3EFC /* QueueTests.swift in Sources */,
+				E19DA71D2CFB7B0100DF3EFC /* CarStationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

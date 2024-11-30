@@ -10,8 +10,8 @@ import Foundation
 class PeopleDinner: Dineable {
     func serveDinner(carId: String) {
         print("Serving dinner to people in car \(carId).")
-        Stats.shared.incrementDining()
-        Stats.shared.incrementPeople()
+        // Removed Stats increment
     }
 }
+
 

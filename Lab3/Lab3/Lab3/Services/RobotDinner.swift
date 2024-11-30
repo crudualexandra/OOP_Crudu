@@ -10,7 +10,6 @@ import Foundation
 class RobotDinner: Dineable {
     func serveDinner(carId: String) {
         print("Serving dinner to robots in car \(carId).")
-        Stats.shared.incrementDining()
-        Stats.shared.incrementRobots()
+        // Removed Stats increment
     }
 }
