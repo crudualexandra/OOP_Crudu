@@ -5,76 +5,91 @@
 //  Created by Crudu Alexandra on 30.11.2024.
 //
 
+// Stats.swift
 import Foundation
 
-// Stats.swift
-class Stats {
+class Stats: ObservableObject {
     static let shared = Stats()
 
-    private(set) var electricCars = 0
-    private(set) var gasCars = 0
-    private(set) var peopleCount = 0
-    private(set) var robotCount = 0
-    private(set) var diningCount = 0
-    private(set) var notDiningCount = 0
-    private(set) var consumption: [String: Int] = ["ELECTRIC": 0, "GAS": 0]
+    @Published private(set) var electricCars = 0
+    @Published private(set) var gasCars = 0
+    @Published private(set) var peopleCount = 0
+    @Published private(set) var robotCount = 0
+    @Published private(set) var diningCount = 0
+    @Published private(set) var notDiningCount = 0
+    @Published private(set) var consumption: [String: Int] = ["ELECTRIC": 0, "GAS": 0]
 
-    private init() {}
+    private let lock = NSLock()
 
     func incrementElectric() {
-        electricCars += 1
+        lock.lock()
+        DispatchQueue.main.async {
+            self.electricCars += 1
+        }
+        lock.unlock()
     }
 
     func incrementGas() {
-        gasCars += 1
+        lock.lock()
+        DispatchQueue.main.async {
+            self.gasCars += 1
+        }
+        lock.unlock()
     }
 
     func incrementPeople() {
-        peopleCount += 1
+        lock.lock()
+        DispatchQueue.main.async {
+            self.peopleCount += 1
+        }
+        lock.unlock()
     }
 
     func incrementRobots() {
-        robotCount += 1
+        lock.lock()
+        DispatchQueue.main.async {
+            self.robotCount += 1
+        }
+        lock.unlock()
     }
 
     func incrementDining() {
-        diningCount += 1
+        lock.lock()
+        DispatchQueue.main.async {
+            self.diningCount += 1
+        }
+        lock.unlock()
     }
 
     func incrementNotDining() {
-        notDiningCount += 1
+        lock.lock()
+        DispatchQueue.main.async {
+            self.notDiningCount += 1
+        }
+        lock.unlock()
     }
 
     func addConsumption(type: String, amount: Int) {
-        if consumption[type] != nil {
-            consumption[type]! += amount
+        lock.lock()
+        DispatchQueue.main.async {
+            if self.consumption[type] != nil {
+                self.consumption[type]! += amount
+            }
         }
+        lock.unlock()
     }
 
     func reset() {
-        electricCars = 0
-        gasCars = 0
-        peopleCount = 0
-        robotCount = 0
-        diningCount = 0
-        notDiningCount = 0
-        consumption = ["ELECTRIC": 0, "GAS": 0]
-    }
-
-    func printStats() {
-        let statsDict: [String: Any] = [
-            "ELECTRIC": electricCars,
-            "GAS": gasCars,
-            "PEOPLE": peopleCount,
-            "ROBOTS": robotCount,
-            "DINING": diningCount,
-            "NOT_DINING": notDiningCount,
-            "CONSUMPTION": consumption
-        ]
-        if let jsonData = try? JSONSerialization.data(withJSONObject: statsDict, options: .prettyPrinted) {
-            if let jsonString = String(data: jsonData, encoding: .utf8) {
-                print(jsonString)
-            }
+        lock.lock()
+        DispatchQueue.main.async {
+            self.electricCars = 0
+            self.gasCars = 0
+            self.peopleCount = 0
+            self.robotCount = 0
+            self.diningCount = 0
+            self.notDiningCount = 0
+            self.consumption = ["ELECTRIC": 0, "GAS": 0]
         }
+        lock.unlock()
     }
 }

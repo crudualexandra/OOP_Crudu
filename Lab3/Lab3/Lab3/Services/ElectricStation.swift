@@ -11,7 +11,6 @@ import Foundation
 class ElectricStation: Refuelable {
     func refuel(carId: String) {
         print("Refueling electric car \(carId).")
-        Stats.shared.incrementElectric()
     }
 }
 

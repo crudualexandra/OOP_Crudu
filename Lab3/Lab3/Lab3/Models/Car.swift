@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Car {
+class Car: Decodable {
     let id: Int
     let type: String       // "ELECTRIC" or "GAS"
     let passengers: String // "PEOPLE" or "ROBOTS"

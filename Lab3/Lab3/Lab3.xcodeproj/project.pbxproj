@@ -31,6 +31,9 @@
 		E19DA71D2CFB7B0100DF3EFC /* CarStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA71C2CFB7B0100DF3EFC /* CarStationTests.swift */; };
 		E19DA71F2CFB848300DF3EFC /* Semaphore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA71E2CFB848300DF3EFC /* Semaphore.swift */; };
 		E19DA7212CFB84B800DF3EFC /* SemaphoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7202CFB84B800DF3EFC /* SemaphoreTests.swift */; };
+		E19DA7232CFB86FD00DF3EFC /* CarFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7222CFB86FD00DF3EFC /* CarFileReader.swift */; };
+		E19DA7252CFB873D00DF3EFC /* CarServingScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7242CFB873D00DF3EFC /* CarServingScheduler.swift */; };
+		E19DA7282CFB89BC00DF3EFC /* CarServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19DA7272CFB89BC00DF3EFC /* CarServiceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		E19DA71C2CFB7B0100DF3EFC /* CarStationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarStationTests.swift; sourceTree = "<group>"; };
 		E19DA71E2CFB848300DF3EFC /* Semaphore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Semaphore.swift; sourceTree = "<group>"; };
 		E19DA7202CFB84B800DF3EFC /* SemaphoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemaphoreTests.swift; sourceTree = "<group>"; };
+		E19DA7222CFB86FD00DF3EFC /* CarFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFileReader.swift; sourceTree = "<group>"; };
+		E19DA7242CFB873D00DF3EFC /* CarServingScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarServingScheduler.swift; sourceTree = "<group>"; };
+		E19DA7272CFB89BC00DF3EFC /* CarServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarServiceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				E19DA7182CFB7AB100DF3EFC /* Car.swift */,
+				E19DA7272CFB89BC00DF3EFC /* CarServiceViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +195,8 @@
 				E19DA6F22CFB737100DF3EFC /* LinkedListNode.swift */,
 				E19DA7142CFB790900DF3EFC /* Stats.swift */,
 				E19DA71E2CFB848300DF3EFC /* Semaphore.swift */,
+				E19DA7222CFB86FD00DF3EFC /* CarFileReader.swift */,
+				E19DA7242CFB873D00DF3EFC /* CarServingScheduler.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -321,8 +330,10 @@
 				E19DA6DB2CFB709F00DF3EFC /* ContentView.swift in Sources */,
 				E19DA70B2CFB787C00DF3EFC /* Refuelable.swift in Sources */,
 				E19DA7192CFB7AB100DF3EFC /* Car.swift in Sources */,
+				E19DA7252CFB873D00DF3EFC /* CarServingScheduler.swift in Sources */,
 				E19DA71B2CFB7ACD00DF3EFC /* CarStation.swift in Sources */,
 				E19DA7132CFB78E800DF3EFC /* GasStation.swift in Sources */,
+				E19DA7232CFB86FD00DF3EFC /* CarFileReader.swift in Sources */,
 				E19DA7152CFB790900DF3EFC /* Stats.swift in Sources */,
 				E19DA70D2CFB789600DF3EFC /* PeopleDinner.swift in Sources */,
 				E19DA6EF2CFB731800DF3EFC /* Queue.swift in Sources */,
@@ -335,6 +346,7 @@
 				E19DA7112CFB78D200DF3EFC /* ElectricStation.swift in Sources */,
 				E19DA6F82CFB73BB00DF3EFC /* CircularBufferQueue.swift in Sources */,
 				E19DA70F2CFB78B400DF3EFC /* RobotDinner.swift in Sources */,
+				E19DA7282CFB89BC00DF3EFC /* CarServiceViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +501,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lab3/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -517,6 +530,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Lab3/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

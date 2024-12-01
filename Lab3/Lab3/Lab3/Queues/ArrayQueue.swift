@@ -5,9 +5,9 @@
 //  Created by Crudu Alexandra on 30.11.2024.
 //
 
+
 import Foundation
 
-// ArrayQueue.swift
 class ArrayQueue<T>: Queue {
     private var elements: [T] = []
 
@@ -16,11 +16,15 @@ class ArrayQueue<T>: Queue {
     }
 
     func dequeue() -> T? {
-        guard !elements.isEmpty else { return nil }
-        return elements.removeFirst()
+        return isEmpty() ? nil : elements.removeFirst()
     }
 
     func isEmpty() -> Bool {
         return elements.isEmpty
+    }
+
+    // New method to get elements without modifying the queue
+    func getElements() -> [T] {
+        return elements
     }
 }
