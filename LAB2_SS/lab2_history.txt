@@ -1,0 +1,373 @@
+Last login: Sat Nov  2 20:27:20 on ttys006
+crudualexandra@MacBook-Air-Crudu ~ % cd /Users/crudualexandra/Desktop/OOP_Crudu
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git init
+Reinitialized existing Git repository in /Users/crudualexandra/Desktop/OOP_Crudu/.git/
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git add OOP_Lab2
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git status
+On branch oop-intermediate-tasks
+Your branch is up to date with 'origin/oop-intermediate-tasks'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   OOP_Lab2/.DS_Store
+	new file:   OOP_Lab2/aplicatie_test.xcodeproj/project.pbxproj
+	new file:   OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+	new file:   OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+	new file:   OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	new file:   OOP_Lab2/aplicatie_test.xcodeproj/xcuserdata/crudualexandra.xcuserdatad/xcschemes/xcschememanagement.plist
+	new file:   OOP_Lab2/aplicatie_test/.DS_Store
+	new file:   OOP_Lab2/aplicatie_test/Assets.xcassets/AccentColor.colorset/Contents.json
+	new file:   OOP_Lab2/aplicatie_test/Assets.xcassets/AppIcon.appiconset/Contents.json
+	new file:   OOP_Lab2/aplicatie_test/Assets.xcassets/Contents.json
+	new file:   OOP_Lab2/aplicatie_test/Content/Americano.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/Cappuccino.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/Coffee.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/CoffeeProtocol.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/Intensity.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/PumpkinSpiceLatte.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/SyrupCappuccino.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/SyrupType.swift
+	new file:   OOP_Lab2/aplicatie_test/ContentView.swift
+	new file:   OOP_Lab2/aplicatie_test/Preview Content/Preview Assets.xcassets/Contents.json
+	new file:   OOP_Lab2/aplicatie_test/aplicatie_testApp.swift
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   OOPLab0.xcodeproj/project.pbxproj
+	modified:   OOPLab0.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOPLab0/Display.swift
+
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git reset OOP_Lab2
+Unstaged changes after reset:
+M	.DS_Store
+M	OOPLab0.xcodeproj/project.pbxproj
+M	OOPLab0.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+M	OOPLab0/Display.swift
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git status
+On branch oop-intermediate-tasks
+Your branch is up to date with 'origin/oop-intermediate-tasks'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   OOPLab0.xcodeproj/project.pbxproj
+	modified:   OOPLab0.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOPLab0/Display.swift
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	OOP_Lab2/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git checkout -b "oop-advanced-tasks"
+Switched to a new branch 'oop-advanced-tasks'
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git status
+On branch oop-advanced-tasks
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   OOPLab0.xcodeproj/project.pbxproj
+	modified:   OOPLab0.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOPLab0/Display.swift
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	OOP_Lab2/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git add OOP_Lab2
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git status
+On branch oop-advanced-tasks
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   OOP_Lab2/.DS_Store
+	new file:   OOP_Lab2/aplicatie_test.xcodeproj/project.pbxproj
+	new file:   OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+	new file:   OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+	new file:   OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	new file:   OOP_Lab2/aplicatie_test.xcodeproj/xcuserdata/crudualexandra.xcuserdatad/xcschemes/xcschememanagement.plist
+	new file:   OOP_Lab2/aplicatie_test/.DS_Store
+	new file:   OOP_Lab2/aplicatie_test/Assets.xcassets/AccentColor.colorset/Contents.json
+	new file:   OOP_Lab2/aplicatie_test/Assets.xcassets/AppIcon.appiconset/Contents.json
+	new file:   OOP_Lab2/aplicatie_test/Assets.xcassets/Contents.json
+	new file:   OOP_Lab2/aplicatie_test/Content/Americano.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/Cappuccino.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/Coffee.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/CoffeeProtocol.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/Intensity.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/PumpkinSpiceLatte.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/SyrupCappuccino.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/SyrupType.swift
+	new file:   OOP_Lab2/aplicatie_test/ContentView.swift
+	new file:   OOP_Lab2/aplicatie_test/Preview Content/Preview Assets.xcassets/Contents.json
+	new file:   OOP_Lab2/aplicatie_test/aplicatie_testApp.swift
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   OOPLab0.xcodeproj/project.pbxproj
+	modified:   OOPLab0.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOPLab0/Display.swift
+
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git commit -m "Task 1: A coffee shop application that brews coffee"
+[oop-advanced-tasks e7acd6d] Task 1: A coffee shop application that brews coffee
+ 21 files changed, 619 insertions(+)
+ create mode 100644 OOP_Lab2/.DS_Store
+ create mode 100644 OOP_Lab2/aplicatie_test.xcodeproj/project.pbxproj
+ create mode 100644 OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ create mode 100644 OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ create mode 100644 OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+ create mode 100644 OOP_Lab2/aplicatie_test.xcodeproj/xcuserdata/crudualexandra.xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100644 OOP_Lab2/aplicatie_test/.DS_Store
+ create mode 100644 OOP_Lab2/aplicatie_test/Assets.xcassets/AccentColor.colorset/Contents.json
+ create mode 100644 OOP_Lab2/aplicatie_test/Assets.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 OOP_Lab2/aplicatie_test/Assets.xcassets/Contents.json
+ create mode 100644 OOP_Lab2/aplicatie_test/Content/Americano.swift
+ create mode 100644 OOP_Lab2/aplicatie_test/Content/Cappuccino.swift
+ create mode 100644 OOP_Lab2/aplicatie_test/Content/Coffee.swift
+ create mode 100644 OOP_Lab2/aplicatie_test/Content/CoffeeProtocol.swift
+ create mode 100644 OOP_Lab2/aplicatie_test/Content/Intensity.swift
+ create mode 100644 OOP_Lab2/aplicatie_test/Content/PumpkinSpiceLatte.swift
+ create mode 100644 OOP_Lab2/aplicatie_test/Content/SyrupCappuccino.swift
+ create mode 100644 OOP_Lab2/aplicatie_test/Content/SyrupType.swift
+ create mode 100644 OOP_Lab2/aplicatie_test/ContentView.swift
+ create mode 100644 OOP_Lab2/aplicatie_test/Preview Content/Preview Assets.xcassets/Contents.json
+ create mode 100644 OOP_Lab2/aplicatie_test/aplicatie_testApp.swift
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git push origin oop-advanced-tasks
+Enumerating objects: 39, done.
+Counting objects: 100% (39/39), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (34/34), done.
+Writing objects: 100% (38/38), 26.43 KiB | 13.21 MiB/s, done.
+Total 38 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'oop-advanced-tasks' on GitHub by visiting:
+remote:      https://github.com/crudualexandra/OOP_Crudu/pull/new/oop-advanced-tasks
+remote: 
+To https://github.com/crudualexandra/OOP_Crudu.git
+ * [new branch]      oop-advanced-tasks -> oop-advanced-tasks
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git status
+On branch oop-advanced-tasks
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   OOPLab0.xcodeproj/project.pbxproj
+	modified:   OOPLab0.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOPLab0/Display.swift
+	modified:   OOP_Lab2/.DS_Store
+	modified:   OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOP_Lab2/aplicatie_test/Content/Americano.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Cappuccino.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Coffee.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/CoffeeProtocol.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Intensity.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/PumpkinSpiceLatte.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/SyrupCappuccino.swift
+	modified:   OOP_Lab2/aplicatie_test/ContentView.swift
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	LAB2_SS/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git add OOP_Lab2
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git status
+On branch oop-advanced-tasks
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   OOP_Lab2/.DS_Store
+	modified:   OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOP_Lab2/aplicatie_test/Content/Americano.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Cappuccino.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Coffee.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/CoffeeProtocol.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Intensity.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/PumpkinSpiceLatte.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/SyrupCappuccino.swift
+	modified:   OOP_Lab2/aplicatie_test/ContentView.swift
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   OOPLab0.xcodeproj/project.pbxproj
+	modified:   OOPLab0.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOPLab0/Display.swift
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	LAB2_SS/
+
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git commit -m "feat(task2): Implement key OOP principles with enhanced method reuse and DRY adherence
+
+- Added super.printDetails() in subclasses to reuse parent class method, reducing code duplication
+- Overrode printDetails() in each subclass for specific functionality
+- Utilized super keyword to access superclass methods and properties, enhancing code clarity
+- Applied DRY principle by reusing the parent method, minimizing redundancy in subclasses
+"
+[oop-advanced-tasks a106589] feat(task2): Implement key OOP principles with enhanced method reuse and DRY adherence
+ 10 files changed, 26 insertions(+), 4 deletions(-)
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git push origin oop-advanced-tasks
+Enumerating objects: 36, done.
+Counting objects: 100% (36/36), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (19/19), 28.23 KiB | 14.12 MiB/s, done.
+Total 19 (delta 11), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (11/11), completed with 11 local objects.
+To https://github.com/crudualexandra/OOP_Crudu.git
+   e7acd6d..a106589  oop-advanced-tasks -> oop-advanced-tasks
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % GIT STATUS
+fatal: cannot handle STATUS as a builtin
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git status
+On branch oop-advanced-tasks
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   OOPLab0.xcodeproj/project.pbxproj
+	modified:   OOPLab0.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOPLab0/Display.swift
+	modified:   OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOP_Lab2/aplicatie_test/Content/Americano.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Cappuccino.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Coffee.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/PumpkinSpiceLatte.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/SyrupCappuccino.swift
+	modified:   OOP_Lab2/aplicatie_test/ContentView.swift
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	LAB2_SS/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git add OOP_Lab2
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git commit -m "Task3: Add subclass-specific coffee-making methods with reuse and class casting 
+
+- Implemented unique make steps for each coffee type
+- Reused base steps with super.make() and enforced final on base method
+- Used class casting to differentiate coffee types
+"
+[oop-advanced-tasks 6d3da0c] Task3: Add subclass-specific coffee-making methods with reuse and class casting
+ 7 files changed, 49 insertions(+), 34 deletions(-)
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git push origin oop-advanced-tasks
+Enumerating objects: 30, done.
+Counting objects: 100% (30/30), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (16/16), 18.42 KiB | 18.42 MiB/s, done.
+Total 16 (delta 9), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (9/9), completed with 9 local objects.
+To https://github.com/crudualexandra/OOP_Crudu.git
+   a106589..6d3da0c  oop-advanced-tasks -> oop-advanced-tasks
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git status
+On branch oop-advanced-tasks
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   OOP_Lab2/aplicatie_test/Assets.xcassets/Coffee Shop.imageset/Contents.json
+	new file:   "OOP_Lab2/aplicatie_test/Assets.xcassets/Coffee Shop.imageset/Design f\304\203r\304\203 titlu-3.png"
+	new file:   OOP_Lab2/aplicatie_test/Assets.xcassets/background.imageset/Contents.json
+	new file:   OOP_Lab2/aplicatie_test/Assets.xcassets/background.imageset/kjandjhb drjhf.png
+	new file:   OOP_Lab2/aplicatie_test/ColorExtensions.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/Barista.swift
+	new file:   OOP_Lab2/aplicatie_test/MenuView.swift
+	new file:   OOP_Lab2/aplicatie_test/OrderView.swift
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   OOPLab0.xcodeproj/project.pbxproj
+	modified:   OOPLab0.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOPLab0/Display.swift
+	modified:   OOP_Lab2/aplicatie_test.xcodeproj/project.pbxproj
+	modified:   OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOP_Lab2/aplicatie_test/ColorExtensions.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Americano.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Barista.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Cappuccino.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Coffee.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/CoffeeProtocol.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Intensity.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/PumpkinSpiceLatte.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/SyrupCappuccino.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/SyrupType.swift
+	modified:   OOP_Lab2/aplicatie_test/ContentView.swift
+	modified:   OOP_Lab2/aplicatie_test/MenuView.swift
+	modified:   OOP_Lab2/aplicatie_test/OrderView.swift
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	LAB2_SS/
+
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git add OOP_Lab2
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git status
+On branch oop-advanced-tasks
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   OOP_Lab2/aplicatie_test.xcodeproj/project.pbxproj
+	modified:   OOP_Lab2/aplicatie_test.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	new file:   OOP_Lab2/aplicatie_test/Assets.xcassets/Coffee Shop.imageset/Contents.json
+	new file:   "OOP_Lab2/aplicatie_test/Assets.xcassets/Coffee Shop.imageset/Design f\304\203r\304\203 titlu-3.png"
+	new file:   OOP_Lab2/aplicatie_test/Assets.xcassets/background.imageset/Contents.json
+	new file:   OOP_Lab2/aplicatie_test/Assets.xcassets/background.imageset/kjandjhb drjhf.png
+	new file:   OOP_Lab2/aplicatie_test/ColorExtensions.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Americano.swift
+	new file:   OOP_Lab2/aplicatie_test/Content/Barista.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Cappuccino.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Coffee.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/CoffeeProtocol.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/Intensity.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/PumpkinSpiceLatte.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/SyrupCappuccino.swift
+	modified:   OOP_Lab2/aplicatie_test/Content/SyrupType.swift
+	modified:   OOP_Lab2/aplicatie_test/ContentView.swift
+	new file:   OOP_Lab2/aplicatie_test/MenuView.swift
+	new file:   OOP_Lab2/aplicatie_test/OrderView.swift
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   OOPLab0.xcodeproj/project.pbxproj
+	modified:   OOPLab0.xcodeproj/project.xcworkspace/xcuserdata/crudualexandra.xcuserdatad/UserInterfaceState.xcuserstate
+	modified:   OOPLab0/Display.swift
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	LAB2_SS/
+
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git commit -m "Task4: Encapsulate Coffee classes with Barista as sole interface 
+
+- Added Barista to handle coffee orders, isolating Coffee classes from main access
+- Used fileprivate to restrict Coffee classes to Barista's module
+- Updated project structure to ensure main only interacts with Barista          - UI design implemented
+"
+[oop-advanced-tasks 274065f] Task4: Encapsulate Coffee classes with Barista as sole interface
+ 19 files changed, 423 insertions(+), 53 deletions(-)
+ create mode 100644 OOP_Lab2/aplicatie_test/Assets.xcassets/Coffee Shop.imageset/Contents.json
+ create mode 100644 "OOP_Lab2/aplicatie_test/Assets.xcassets/Coffee Shop.imageset/Design f\304\203r\304\203 titlu-3.png"
+ create mode 100644 OOP_Lab2/aplicatie_test/Assets.xcassets/background.imageset/Contents.json
+ create mode 100644 OOP_Lab2/aplicatie_test/Assets.xcassets/background.imageset/kjandjhb drjhf.png
+ create mode 100644 OOP_Lab2/aplicatie_test/ColorExtensions.swift
+ create mode 100644 OOP_Lab2/aplicatie_test/Content/Barista.swift
+ create mode 100644 OOP_Lab2/aplicatie_test/MenuView.swift
+ create mode 100644 OOP_Lab2/aplicatie_test/OrderView.swift
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % git push origin oop-advanced-tasks
+Enumerating objects: 50, done.
+Counting objects: 100% (50/50), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (31/31), done.
+Writing objects: 100% (31/31), 235.71 KiB | 26.19 MiB/s, done.
+Total 31 (delta 10), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (10/10), completed with 8 local objects.
+To https://github.com/crudualexandra/OOP_Crudu.git
+   6d3da0c..274065f  oop-advanced-tasks -> oop-advanced-tasks
+crudualexandra@MacBook-Air-Crudu OOP_Crudu % 

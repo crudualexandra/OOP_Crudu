@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E170F31C2CCC31420001DB0A /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170F31B2CCC31420001DB0A /* Display.swift */; };
 		E179B6542CB85A7500CC8C1B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E179B6532CB85A7500CC8C1B /* main.swift */; };
 		E179B65B2CB85A9000CC8C1B /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = E179B65A2CB85A9000CC8C1B /* Individual.swift */; };
 		E179B65D2CB85A9E00CC8C1B /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E179B65C2CB85A9E00CC8C1B /* Universe.swift */; };
@@ -31,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E170F31A2CCC312F0001DB0A /* Task1 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Task1; path = ../../Task1; sourceTree = "<group>"; };
+		E170F31B2CCC31420001DB0A /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
 		E179B6502CB85A7500CC8C1B /* OOPLab0 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OOPLab0; sourceTree = BUILT_PRODUCTS_DIR; };
 		E179B6532CB85A7500CC8C1B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E179B65A2CB85A9000CC8C1B /* Individual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Individual.swift; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 		E179B6522CB85A7500CC8C1B /* OOPLab0 */ = {
 			isa = PBXGroup;
 			children = (
+				E170F31A2CCC312F0001DB0A /* Task1 */,
+				E170F31B2CCC31420001DB0A /* Display.swift */,
 				E179B6712CB8615700CC8C1B /* input.json */,
 				E179B66C2CB85B6D00CC8C1B /* Logics */,
 				E179B66A2CB85B2500CC8C1B /* Universes */,
@@ -165,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E170F31C2CCC31420001DB0A /* Display.swift in Sources */,
 				E179B6672CB85B0F00CC8C1B /* Classifier.swift in Sources */,
 				E179B6632CB85ADA00CC8C1B /* Hitchhiker.swift in Sources */,
 				E179B65F2CB85AAF00CC8C1B /* StarWars.swift in Sources */,
